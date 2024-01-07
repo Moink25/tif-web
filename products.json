@@ -1,0 +1,26 @@
+[
+  {
+    "id":1,
+    "name":"TIF Official Hoodie",
+    "price":850,
+    "image":"assets/img/product1.jpg"
+  },
+  {
+    "id":2,
+    "name":"TIF T-shirt",
+    "price":350,
+    "image":"assets/img/product2.jpg"
+  },
+  {
+    "id":3,
+    "name":"TIF Hoodie",
+    "price":900,
+    "image":"assets/img/product1.jpg"
+  },
+  {
+    "id":4,
+    "name":"Books",
+    "price":400,
+    "image":"assets/img/product2.jpg"
+  }
+]

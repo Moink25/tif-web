@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style3.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="img-slider">
+    <div class="slide active">
+        <img src="assets/img/canteen.jpg" alt="">
+        <div class="info"><h2>Canteen Talks</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, reiciendis.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img src="assets/img/fund.jpg" alt="">
+        <div class="info"><h2>Workshops</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, reiciendis.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img src="assets/img/intro.jpg" alt="">
+        <div class="info"><h2>Intro Session</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, reiciendis.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img src="assets/img/fund.jpg" alt="">
+        <div class="info"><h2>Workshops</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, reiciendis.</p>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+  <script>
+    const Slides=document.querySelectorAll('.slide');
+    const btns=document.querySelectorAll('.btn');
+    let currentslide=1;
+
+
+    const navmanual=function(manual){
+   Slides.forEach((slide)=>
+   {
+    slide.classList.remove('active');
+
+    btns.forEach((btn)=>{
+      btn.classList.remove('active');
+    })
+   })
+
+      Slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn,i)=>
+    {
+      btn.addEventListener('click',()=>{
+              navmanual(i);
+              currentslide=i;
+      });
+    })
+  </script>
+</body>
+</html>
